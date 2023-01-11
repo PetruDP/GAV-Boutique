@@ -46,5 +46,5 @@
 a:hover .textPic3 {
   color: #f60000;
   border: 2px solid black;
-  background-color: rgb(240, 226, 206);
+  background-color: var(--bgPink);
 }

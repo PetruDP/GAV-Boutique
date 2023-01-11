@@ -1,26 +1,36 @@
+:root {
+  --bgPink: rgb(233, 164, 167);
+}
+
 * {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
+  background-image: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
   font-family: Georgia;
   margin: 0;
 }
 
 header h1 {
-  font-family: "Trirong", serif !important;
+  font-family: "Sofia", sans-serif !important;
   margin: 0;
   padding: 1rem;
-  border-bottom: 3px solid #000000;
   text-align: center;
 }
 
 header .barMenu {
-  background-color: rgb(249, 242, 232);
   display: flex;
   justify-content: center;
   align-content: space-between;
-  border-bottom: 3px solid #000000;
   margin: 0;
 }
 
@@ -39,20 +49,45 @@ header a:last-child {
 
 header a:hover {
   text-decoration: underline;
-  background-color: rgb(240, 226, 206);
+  background-color: rgba(233, 167, 167, 0.4);
 }
 
-footer {
-  display: flex;
+footer h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0%;
 }
 
 footer .contact {
-  transition: all 0.5s;
-  margin-left: auto;
-  padding: 0 0.5rem;
-  margin-right: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  transition: all 1.5s;
+  padding-top: 0.5rem;
+}
+
+footer .contact > div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+footer .contact > div > div {
+  display: flex;
+  padding: 0.5rem;
+}
+
+footer .contact > div > div p {
+  margin: 0;
+  /* padding: 0.5rem; */
+}
+
+footer .contact img {
+  margin: 0 0.5rem;
 }
 
 .contactAnimation {
-  background-color: rgba(255, 255, 100);
+  background-color: rgba(206, 120, 120, 0.75);
 }

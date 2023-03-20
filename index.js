@@ -1,5 +1,6 @@
 let bgPink = "rgb(233, 164, 167)";
 
+// menu buttons
 if (window.location.pathname == "/index.html") {
   document.querySelector(".homeLink").style.backgroundColor = bgPink;
   document.querySelector(".homeLink").style.textDecoration = "underline";
@@ -19,6 +20,7 @@ if (window.location.pathname == "/index.html") {
 let date = new Date();
 let currMonth = date.getMonth() + 1;
 
+// "Paste"/"Craciun" check period
 if (currMonth >= 2 && currMonth <= 5) {
   document.querySelector(".pasteCraciunLink").innerText =
     "Decoratiuni de Paste";
